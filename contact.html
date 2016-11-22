@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>Contact Me</TITLE>
+    <META NAME="Generator" CONTENT="SlickEdit">
+    <META NAME="Author" CONTENT="Matthew Ames">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+    });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+    include_once('index.php'); 
+    ?>
+</HEAD>
+
+<BODY>
+    <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Matthew Ames</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download" aria-expanded="false">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="download">
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="portfolio.html">My Portfolio</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bs-docs-section">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="page-header">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="page-header">
+                        <h3>Connect With Me</h3>
+                    </div>
+                    <row>
+                        <div class="col-xs-3">
+                            <a href="https://github.com/amesmr"><img class="socialLinks" src="assets/images/github.jpg" height="30px" width="30px"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="https://www.linkedin.com/in/matthew-ames-b4568b12a?trk=hp-identity-name"><img class="socialLinks" src="assets/images/linkedin_360.png" height="30px" width="30px"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="http://stackoverflow.com/users/7066340/matt-ames"><img class="socialLinks" src="assets/images/stack_360.jpg" height="30px" width="30px"></a>
+                        </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+        <form class="form-horizontal col-md-7" method="post">
+            <fieldset>
+                <legend>Send Me an Email</legend>
+                <div class="form-group col-md-12">
+                    <label for="to" class="col-md-2 control-label">Email</label>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="to" value="mattames@carolina.rr.com" disabled>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="subject" class="col-md-2 control-label">Subject</label>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="bodyText" class="col-md-3 control-label">Message Body</label>
+                    <div class="col-md-12">
+                        <textarea class="form-control" rows="3" id="bodyText"></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <div class="col-md-12 col-md-offset-3">
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary" onclick="myFunction(to, subject, bodyText)">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-bottom text-center">
+        <h5>copyright 2016 matthew ames</h5>
+    </div>
+    <script src="assets/js/PrepareEmail.js"></script>
+    <script>
+    var form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        console.log("Saving value", form.elements.value);
+        event.preventDefault();
+    });
+    </script>
+</BODY>
+
+</HTML>

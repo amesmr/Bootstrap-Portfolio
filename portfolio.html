@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE>My Portfolio</TITLE>
+    <META NAME="Generator" CONTENT="SlickEdit">
+    <META NAME="Author" CONTENT="Matthew Ames">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+    });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+    include_once('index.php'); 
+    ?>
+</HEAD>
+
+<BODY>
+    <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Matthew Ames</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download" aria-expanded="false">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="download">
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="portfolio.html">My Portfolio</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bs-docs-section">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="page-header">
+                        <h1>My GitHub Projects</h1>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="page-header">
+                        <h3>Connect With Me</h3>
+                    </div>
+                    <row>
+                        <div class="col-xs-3">
+                            <a href="https://github.com/amesmr"><img class="socialLinks" src="assets/images/github.jpg" height="30px" width="30px"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="https://www.linkedin.com/in/matthew-ames-b4568b12a?trk=hp-identity-name"><img class="socialLinks" src="assets/images/linkedin_360.png" height="30px" width="30px"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="http://stackoverflow.com/users/7066340/matt-ames"><img class="socialLinks" src="assets/images/stack_360.jpg" height="30px" width="30px"></a>
+                        </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+        <row>
+            <div class="col-xs-4 col-xs-offset-1">
+                <a href="https://github.com/amesmr/FirstDayStuff"><img src="assets/images/github.jpg" height="50%" width="100%">
+                    <div class="well">
+                        First Day Stuff
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://github.com/amesmr/positioning"><img src="assets/images/github.jpg" height="50%" width="100%">
+                    <div class="well">
+                        Positioning
+                    </div>
+                </a>
+            </div>
+        </row>
+        <row>
+            <div class="col-xs-4 col-xs-offset-1">
+                <a href="https://github.com/amesmr/Basic-Portfolio"><img src="assets/images/github.jpg" height="50%" width="100%">
+                    <div class="well">
+                        This Project
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://github.com/amesmr/PRE_WORK"><img src="assets/images/github.jpg" height="50%" width="100%">
+                    <div class="well">
+                        PRE_WORK
+                    </div>
+                </a>
+            </div>
+        </row>
+        <div class="navbar navbar-default navbar-fixed-bottom text-center">
+            <h5>copyright 2016 matthew ames</h5>
+        </div>
+    </div>
+</BODY>
+
+</HTML>
